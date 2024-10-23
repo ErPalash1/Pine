@@ -1,0 +1,18 @@
+<template>
+    <div style="height: 300px;">
+        <!-- Your content here -->
+
+   <p>{recordLoaded} </p>
+   <p>{totalRecord} </p>
+<lightning-datatable
+key-field="Id"
+data={data}
+columns={columns}
+enable-infinite-loading
+onloadmore={loadMoreDatas}
+hide-checkbox-column
+show-row-number-column>
+
+</lightning-datatable>
+</div>
+</template>
